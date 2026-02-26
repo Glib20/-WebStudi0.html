@@ -36,20 +36,27 @@
 </header>
 
 <!-- Mobile Menu -->
-<div class="mobile-menu js-menu-container">
-  <button class="mobile-menu__close js-close-menu">✕</button>
+<!-- Mobile Menu Toggle -->
+<button class="mobile-menu-button js-open-menu" aria-label="Open menu">
+  ☰
+</button>
 
-  <nav class="mobile-nav">
-    <ul class="mobile-nav__list">
-      <li><a href="#">Studio</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contacts</a></li>
+<!-- Mobile Menu -->
+<div class="mobile-menu js-menu-container">
+  <button class="mobile-menu__close js-close-menu" aria-label="Close menu">
+    ✕
+  </button>
+
+  <nav class="mobile-menu__nav">
+    <ul class="mobile-menu__list">
+      <li><a href="./index.html" class="mobile-menu__link">Studio</a></li>
+      <li><a href="./portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+      <li><a href="./contacts.html" class="mobile-menu__link">Contacts</a></li>
     </ul>
   </nav>
+
 </div>
 
-<!-- JS -->
-<script src="./js/mobile-menu.js"></script>
 
 
       <ul class="contact-list">
@@ -324,5 +331,6 @@
       </form>
     </div>
   </div>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
